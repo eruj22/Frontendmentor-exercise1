@@ -5,10 +5,14 @@
     --neutral2: hsl(300, 24%, 96%);
     --neutral3: hsl(0, 0%, 100%);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-size: 15px;
-    font-family: Spartan;
-    font-weight: 400;
+    font-family: "Spartan", sans-serif;
 }
 .container {
     margin: 0 auto;
@@ -56,13 +60,13 @@ h1 {
 }
 .review-section img {
     border-radius: 50%;
-    height: 80px;
+    width: 100px;
     margin: .5rem 1rem .5rem 0;
 }
 .review {
     margin-top: 5rem;
 }
-.text p {
+span {
     color: var(--neutral1);
 }
 .review-section-top {
