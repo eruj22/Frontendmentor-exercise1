@@ -1,0 +1,120 @@
+:root {
+    --primary1: hsl(300, 43%, 22%);
+    --primary2: hsl(333, 80%, 67%);
+    --neutral1: hsl(303, 10%, 53%);
+    --neutral2: hsl(300, 24%, 96%);
+    --neutral3: hsl(0, 0%, 100%);
+}
+body {
+    font-size: 15px;
+    font-family: Spartan;
+    font-weight: 400;
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    background-color: var(--neutral3);
+}
+
+.main-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary1);
+}
+.main-title p {
+    color: var(--neutral1);
+}
+
+.rating-section {
+    font-size: 1.1rem;
+    color: var(--primary1);
+    text-align: center;
+    font-weight: 700;
+    padding: 1.2rem 0 .4rem 0;
+    margin: .6rem auto;
+    background-color: var(--neutral2);
+    border-radius: .5rem;
+    max-width: 500px;
+}
+.rating {
+    margin-top: 4rem;
+}
+
+.review-section {
+    background-color: var(--primary1);
+    color: var(--neutral3);
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+}
+.review-section img {
+    border-radius: 50%;
+    width: 100px;
+    margin: .5rem 1rem .5rem 0;
+}
+.review {
+    margin-top: 5rem;
+}
+.text p {
+    color: var(--neutral1);
+}
+.review-section-top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+    }
+
+    .review {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .review-section {
+        margin: 0 1rem;
+    }
+    .section2 {
+        margin-bottom: 2.5rem;
+    }
+    .section1 {
+        margin-bottom: 5rem;
+    }
+    .main-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 2rem;
+    }
+    h1 {
+        font-size: 3.3rem;
+        padding-bottom: 2rem;
+    }
+
+    .rating {
+        margin-left: 5.3rem;
+        align-items: center;
+    }
+    .rating-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .5rem 0;
+        margin: 1rem 0;
+    }
+}
